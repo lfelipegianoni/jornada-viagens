@@ -10,6 +10,8 @@ header{
     align-items: flex-start;
     /* display flex com o padding ja gera o width eo height do header, por conta disto nao usamos o width eo height para o header */
     padding: 38px 48px;
+    /* foi declarado para servir de referencia para o nav, caso contrario a referencia seria o body */
+    position: relative;
 }
 
 /* tag a, é uma tag inline, por conta disto temos que passar um inline-block para ela  */
@@ -27,8 +29,30 @@ header{
 /* ~ , é um seletor de irmandade */
 input[type="checkbox"]:checked ~ nav{
     display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-tertiary-color);
 }
+
 nav {
     /* esconde os elementos desta atag */
     display: none;
+}
+
+/* Esconde os marcadores de lista */
+.list-links{
+    list-style: none;
+}
+
+.list-links li{
+    margin: 16px 0;
+}
+
+/* a classe com a tag li explicita que apenas os li dentro da classe list-links serao modificados */
+.list-links li a{
+    color: var(--text-secondary-color);
+    /* tira o sublinhado */
+    text-decoration: none;
 }

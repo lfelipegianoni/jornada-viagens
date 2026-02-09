@@ -21,7 +21,7 @@ Cores de textos */
     --background-tertiary-color: #000000;
 
     --text-primary-color: #222222;
-    --text-secondary--color: #ffffff;
+    --text-secondary-color: #ffffff;
 
     --titles-weight: 700;
     --text-weight: 400;
@@ -34,8 +34,6 @@ body, img, h1, fieldset, legend, input, select, textarea, button {
     box-sizing: border-box;
 }
 
-h1{
-    font-family: "Montserrat";
-    font-weight: var(--titles-weight);
-    color: var(--primary-color);
+body {
+    font-family: "Monstserrat";
 }
