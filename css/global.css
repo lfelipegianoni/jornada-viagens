@@ -14,7 +14,7 @@ Cores de textos */
 :root{
     /* Variaveis de cores */
     --primary-color: #8f0101;
-    --primary-color: #B81515;
+    --secondary-color: #B81515;
     
     --background-primary-color: #ffffff;
     --background-secondary-color: #f5f5f5;
