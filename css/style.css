@@ -1,6 +1,27 @@
+/* Background 
+botoes
+Cores de textos */
+
+/* Raiz */
+:root{
+    /* Variaveis de cores */
+    --background-primary-color: #ffffff;
+    --background-secondary-color: #f5f5f5;
+    --background-tertiary-color: #000000;
+
+    --button-primary-color: #8f0101;
+    --button-primary-color: #B81515;
+
+    --text-primary-color: #222222;
+    --text-secondary--color: #ffffff;
+}
 /* Reset simples */
 body, img, nl, fieldset, legend, input, select, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1{
+    color: var(--button-primary-color);
 }
