@@ -1,0 +1,30 @@
+header{
+    background-color: var(--background-tertiary-color);
+    /* Faz com que as tags dentro deste elemento sejam distribuidas igualmente */
+    display: flex;
+    /* Define em qual direcao os elementos devem ser alinhados */
+    flex-direction: row;
+    /* Centrlizacao dos elementos, o between joga os elementos para as pontas com um espaco no centro */
+    justify-content: space-between;
+    /* Alinhamento dos elementos, flex-start alinha os elementos no inicio */
+    align-items: flex-start;
+    /* display flex com o padding ja gera o width eo height do header, por conta disto nao usamos o width eo height para o header */
+    padding: 38px 48px;
+}
+
+/* tag a, é uma tag inline, por conta disto temos que passar um inline-block para ela  */
+
+.logo {
+    display: inline-block; 
+    width: 68px;
+    height: 64px;
+}
+
+.navigation-menu{
+    margin-top: 24px;
+}
+
+nav {
+    /* esconde os elementos desta atag */
+    display: none;
+}
