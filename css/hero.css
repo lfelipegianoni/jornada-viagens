@@ -1,0 +1,51 @@
+.hero-img{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/hero-mobile.jpg);
+    /* no-repeat faz com que a imagem nao se repita para prencher o espacos vaios da tela */
+    background-repeat: no-repeat;
+    /* contain = se espreme para caber na div principal respeitando a altura ,cover = ocupa o espaco todo */
+    background-size: cover;
+}
+
+.hero h2{
+    padding: 80px 24px;
+    margin: 0px;
+    font-weight: var(--text-weight);
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+
+    .hero-img{
+        height: 620px;
+        background-image: url(../img/hero-tablet.jpg);
+    }
+
+    .hero h2{
+        padding: 80px 60px;
+        font-size: 32px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+
+    .hero-img{
+        height: 620px;
+        background-image: url(../img/hero-desktop.png);
+    }
+
+    .hero h2{
+        padding: 80px 120px;
+    }
+}
+
+@media screen and (min-width: 1920px){
+
+    .hero h2{
+        padding: 80px 160px;
+    }
+}
