@@ -1,4 +1,4 @@
-header{
+.main-header{
     background-color: var(--background-tertiary-color);
     /* Faz com que as tags dentro deste elemento sejam distribuidas igualmente */
     display: flex;
@@ -8,7 +8,7 @@ header{
     justify-content: space-between;
     /* Alinhamento dos elementos, flex-start alinha os elementos no inicio */
     align-items: flex-start;
-    /* display flex com o padding ja gera o width eo height do header, por conta disto nao usamos o width eo height para o header */
+    /* display flex com o padding ja gera o width eo height do .main-header, por conta disto nao usamos o width eo height para o .main-header */
     padding: 38px 48px;
     /* foi declarado para servir de referencia para o nav, caso contrario a referencia seria o body */
     position: relative;
@@ -94,7 +94,7 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-    header{
+    .main-header{
         padding: 38px 120px;
     }
 
@@ -117,7 +117,7 @@ nav {
 }
 
 @media screen and (min-width: 1920px) {
-    header {
+    .main-header {
         padding: 38px 160px;
     }
 }
