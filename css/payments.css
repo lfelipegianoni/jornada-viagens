@@ -1,0 +1,57 @@
+.payments .image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    height: 460px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+.payments .content-container .image-gallery .image.first {
+    background: url(../img/montagem-japao-1.png) no-repeat;
+    background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.second {
+    background: url(../img/montagem-japao-2.png) no-repeat;
+    background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.thirdy{
+    background: url(../img/montagem-japao-3.png) no-repeat;
+    background-size: cover;
+}
+
+.payments .content-container .image-gallery .image.colspan-2 {
+    grid-column: span 2;
+}
+
+@media screen and (min-width:768px) {
+    .payments .content-container .image-gallery .image.first {
+        background: url(../img/montagem-japao-1-tablet.png) no-repeat;
+    }
+
+    .payments .content-container .image-gallery .image.second {
+        background: url(../img/montagem-japao-2-tablet.png) no-repeat;
+    }
+
+    .payments .content-container .image-gallery .image.thirdy{
+        background: url(../img/montagem-japao-3-tablet.png) no-repeat;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .paymantes .content-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .paymants .content-container .text-content {
+        width: 360px;
+    }
+
+    .paymants .content-container .image-gallery {
+        width: 790px;
+        margin: 0;
+    }
+}
