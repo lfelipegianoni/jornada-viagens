@@ -1,14 +1,24 @@
-.hero{
-    margin-bottom: 0;
-}
-
-.hero-img{
+.hero .hero-img,
+.botton-hero .hero-img{
     height: 400px;
     width: 100%;
+}
+
+.botton-hero {
+    width: 100%;
+}
+
+.hero .hero-img{
+    
     background-image: url(../img/hero-mobile.jpg);
     /* no-repeat faz com que a imagem nao se repita para prencher o espacos vaios da tela */
     background-repeat: no-repeat;
     /* contain = se espreme para caber na div principal respeitando a altura ,cover = ocupa o espaco todo */
+    background-size: cover;
+}
+
+.botton-hero .hero-img {
+    background: url(../img/bg-bottom-hero-mobile.jpg) no-repeat;
     background-size: cover;
 }
 
@@ -23,9 +33,16 @@
 
 @media screen and (min-width: 768px){
 
-    .hero-img{
+    .hero .hero-img{
         height: 620px;
         background-image: url(../img/hero-tablet.jpg);
+        background-size: cover;
+    }
+
+    .botton-hero .hero-img {
+        height: 400px;
+        background: url(../img/bg-bottom-hero-tablet.png) no-repeat;
+        background-size: cover;
     }
 
     .hero h2{
@@ -37,11 +54,16 @@
 
 @media screen and (min-width: 1024px){
 
-    .hero-img{
-        height: 620px;
-        background-image: url(../img/hero-desktop.png);
+    .hero .hero-img{
+        background-image: url(../img/hero-desktop.png) no-repeat;
+        background-size: cover;
     }
 
+    .botton-hero .hero-img {
+        height: 600px;
+        background: url(../img/bg-bottom-hero-desktop.png) no-repeat;
+        background-size: cover;
+    }
     .hero h2{
         padding: 80px 120px;
     }
